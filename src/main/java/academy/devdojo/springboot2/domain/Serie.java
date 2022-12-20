@@ -22,9 +22,7 @@ import lombok.experimental.SuperBuilder;
 public class Serie extends Midia {
 	//Modelo para o banco de dados criar espelhado
 	@Id
-	@GeneratedValue(generator = "increment")
-	@GenericGenerator(name = "increment" , strategy = "increment")
-	//@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	protected Long id;
 	private int epsodios;
 	private String diretor;
